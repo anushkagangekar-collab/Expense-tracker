@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Reports - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>💰 Expense Tracker</h2>
+
+    <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-expense.html">Add Expense</a>
+        <a href="history.html">History</a>
+        <a href="reports.html">Reports</a>
+        <a href="index.html">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>📊 Expense Reports</h1>
+    <p>Analyze your spending by category.</p>
+
+    <div class="report-card">
+        <h2>Category-wise Expenses</h2>
+
+        <div id="reportList"></div>
+    </div>
+
+    <div class="report-card">
+        <h2>Expense Summary</h2>
+
+        <div class="summary">
+            <div>
+                <span>Total Expenses</span>
+                <strong id="reportTotal">₹0</strong>
+            </div>
+
+            <div>
+                <span>Number of Expenses</span>
+                <strong id="expenseCount">0</strong>
+            </div>
+
+            <div>
+                <span>Average Expense</span>
+                <strong id="averageExpense">₹0</strong>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer"> 
+    <h3>💰 Expense Tracker</h3> 
+    <p>Track your expenses. Manage your money. Save better.</p>
+     
+        <p class="copyright">© 2026 Expense Tracker. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    loadReports();
+</script>
+
+</body>
+</html>

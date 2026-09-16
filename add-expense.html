@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Add Expense - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>💰 Expense Tracker</h2>
+
+    <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-expense.html">Add Expense</a>
+        <a href="history.html">History</a>
+        <a href="reports.html">Reports</a>
+        <a href="index.html">Logout</a>
+    </div>
+</nav>
+
+<div class="form-container">
+
+    <div class="expense-form">
+        <h1>➕ Add New Expense</h1>
+        <p>Enter your expense details below.</p>
+
+        <form onsubmit="addExpense(event)">
+
+            <label>Date</label>
+            <input type="date" id="expenseDate" required>
+
+            <label>Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>Health</option>
+                <option>Bills</option>
+                <option>Other</option>
+            </select>
+
+            <label>Description</label>
+            <input type="text" id="description" placeholder="e.g. Lunch at restaurant" required>
+
+            <label>Amount (₹)</label>
+            <input type="number" id="amount" placeholder="Enter amount" min="1" required>
+
+            <button type="submit">Add Expense</button>
+
+        </form>
+
+        <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+    </div>
+
+</div>
+<footer class="footer"> 
+    <h3>💰 Expense Tracker</h3> 
+    <p>Track your expenses. Manage your money. Save better.</p>
+     
+        <p class="copyright">© 2026 Expense Tracker. All Rights Reserved.</p>
+     </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
